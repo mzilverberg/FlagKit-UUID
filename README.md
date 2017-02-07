@@ -11,7 +11,7 @@ To be able to open the Sketch-file make sure you're running the latest version o
 In this set, exporting several flags is disabled because OPTA doesn't have corresponding UUIDs for the country code. The following flags are exported:
 
 | Flag | Code | UUID | Country |
-| :-------------: | :-------------: | ------------- |
+| :-------------: | :-------------: | :-------------: | ------------- |
 | ![AD](Images/6kxfttvbfkg4ywupx6g9zc16o@2x.png?raw=true) | AD | 6kxfttvbfkg4ywupx6g9zc16o | Andorra |
 | ![AE](Images/13y072b531iotfuk9ll20xt4u@2x.png?raw=true) | AE | 13y072b531iotfuk9ll20xt4u | United Arab Emirates |
 | ![AF](Images/6xne7xe59eujck02uovziom7p@2x.png?raw=true) | AF | 6xne7xe59eujck02uovziom7p | Afghanistan |
