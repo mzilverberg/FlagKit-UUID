@@ -1,324 +1,255 @@
-# FlagKit ![SE](https://github.com/madebybowtie/FlagKit/blob/master/Images/SE@2x.png)
+# FlagKit with OPTA UUIDs ![NL](https://github.com/mzilverberg/FlagKit-UUID/blob/master/Images/6hzi5pltnz67q4la8yli9qfv6@2x.png)
 
-Beautiful flag icons for usage in apps and on the web.
-
-## Installation (iOS/OSX)
-#### `FlagKit.xcassets`
-Just add `FlagKit.xcassets` to your target.
-#### Carthage
-Add FlagKit to your `Cartfile`:
-```
-github "madebybowtie/FlagKit"
-```
-#### CocoaPods
-Add FlagKit to your `Podfile`:
-```
-pod 'FlagKit'
-```
-
-## Usage (iOS/OSX)
-For OSX, just replace `UIImage` with `NSImage` below
-
-Get an icon for your locale or a world flag:
-```swift
-UIImage(flagImageWithCountryCode: NSLocale.autoupdatingCurrentLocale().objectForKey(NSLocaleCountryCode) as! String)
-UIImage(flagImageForSpecialFlag: .World)
-```
-```objc
-[[UIImage alloc] initWithFlagImageWithCountryCode:[[NSLocale autoupdatingCurrentLocale] objectForKey:NSLocaleCountryCode]];
-```
-If you are just adding `FlagKit.xcassets` to you target, you can simply use the standard `UIImage/NSImage` methods:
-```swift
-UIImage(named: NSLocale.autoupdatingCurrentLocale().objectForKey(NSLocaleCountryCode) as! String)
-```
-```objc
-[UIImage imageNamed:[[NSLocale autoupdatingCurrentLocale] objectForKey:NSLocaleCountryCode]];
-```
+Fork of [madebybowtie's FlagKit repository](https://github.com/madebybowtie/FlagKit), with ISO-codes renamed to OPTA UUIDs.
 
 ## Sketch
 
 To be able to open the Sketch-file make sure you're running the latest version or the beta version [Sketch Beta](http://www.bohemiancoding.com/sketch/beta/).
 
-## More Info
-
-Have a question? Please [open an issue](https://github.com/madebybowtie/FlagKit/issues/new)!
-
 ## Reference
 
-This set currently includes the 267 flags below:
+In this set, exporting several flags is disabled because OPTA doesn't have corresponding UUIDs for the country code. The following flags are exported:
 
-| Flag | Code | Region |
+| Flag | Code | UUID | Country |
 | :-------------: | :-------------: | ------------- |
-| ![CH2](Images/CH2@2x.png?raw=true) | CH2 | Switzerland (Square) |
-| ![EU](Images/EU@2x.png?raw=true) | EU | European Union |
-| ![GB-ENG](Images/GB-ENG@2x.png?raw=true) | GB-ENG | England |
-| ![GB-NIR](Images/GB-NIR@2x.png?raw=true) | GB-NIR | Northern Ireland |
-| ![GB-SCT](Images/GB-SCT@2x.png?raw=true) | GB-SCT | Scotland |
-| ![GB-WLS](Images/GB-WLS@2x.png?raw=true) | GB-WLS | Wales |
-| ![GB-ZET](Images/GB-ZET@2x.png?raw=true) | GB-ZET | Shetland Islands |
-| ![LGBT](Images/LGBT@2x.png?raw=true) | LGBT | Pride |
-| ![SAMI](Images/SAMI@2x.png?raw=true) | SAMI | Sami |
-| ![SE-JAM](Images/SE-JAM@2x.png?raw=true) | SE-JAM | Jämtland |
-| ![SE-SKA](Images/SE-SKA@2x.png?raw=true) | SE-SKA | Skåne |
-| ![SE-VAS](Images/SE-VAS@2x.png?raw=true) | SE-VAS | West Swedish |
-| ![SEFI](Images/SEFI@2x.png?raw=true) | SEFI | Swedish Finnish combo |
-| ![TORN](Images/TORN@2x.png?raw=true) | TORN | Torne Valley |
-| ![US-CA](Images/US-CA@2x.png?raw=true) | US-CA | California |
-| ![WW-AFR](Images/WW-AFR@2x.png?raw=true) | WW-AFR | Africa |
-| ![WW-ASI](Images/WW-ASI@2x.png?raw=true) | WW-ASI | Asia |
-| ![WW-AUS](Images/WW-AUS@2x.png?raw=true) | WW-AUS | Australia |
-| ![WW-EUR](Images/WW-EUR@2x.png?raw=true) | WW-EUR | Europe |
-| ![WW-NAM](Images/WW-NAM@2x.png?raw=true) | WW-NAM | North America |
-| ![WW-SAM](Images/WW-SAM@2x.png?raw=true) | WW-SAM | South America |
-| ![WW](Images/WW@2x.png?raw=true) | WW | World |
-
-| Flag | Code | Country |
-| :-------------: | :-------------: | ------------- |
-| ![AD](Images/AD@2x.png?raw=true) | AD | Andorra |
-| ![AE](Images/AE@2x.png?raw=true) | AE | United Arab Emirates |
-| ![AF](Images/AF@2x.png?raw=true) | AF | Afghanistan |
-| ![AG](Images/AG@2x.png?raw=true) | AG | Antigua & Barbuda |
-| ![AI](Images/AI@2x.png?raw=true) | AI | Anguilla |
-| ![AL](Images/AL@2x.png?raw=true) | AL | Albania |
-| ![AM](Images/AM@2x.png?raw=true) | AM | Armenia |
-| ![AO](Images/AO@2x.png?raw=true) | AO | Angola |
-| ![AR](Images/AR@2x.png?raw=true) | AR | Argentina |
-| ![AS](Images/AS@2x.png?raw=true) | AS | American Samoa |
-| ![AT](Images/AT@2x.png?raw=true) | AT | Austria |
-| ![AU](Images/AU@2x.png?raw=true) | AU | Australia |
-| ![AW](Images/AW@2x.png?raw=true) | AW | Aruba |
-| ![AX](Images/AX@2x.png?raw=true) | AX | Åland Islands |
-| ![AZ](Images/AZ@2x.png?raw=true) | AZ | Azerbaijan |
-| ![BA](Images/BA@2x.png?raw=true) | BA | Bosnia & Herzegovina |
-| ![BB](Images/BB@2x.png?raw=true) | BB | Barbados |
-| ![BD](Images/BD@2x.png?raw=true) | BD | Bangladesh |
-| ![BE](Images/BE@2x.png?raw=true) | BE | Belgium |
-| ![BF](Images/BF@2x.png?raw=true) | BF | Burkina Faso |
-| ![BG](Images/BG@2x.png?raw=true) | BG | Bulgaria |
-| ![BH](Images/BH@2x.png?raw=true) | BH | Bahrain |
-| ![BI](Images/BI@2x.png?raw=true) | BI | Burundi |
-| ![BJ](Images/BJ@2x.png?raw=true) | BJ | Benin |
-| ![BL](Images/BL@2x.png?raw=true) | BL | St. Barthélemy |
-| ![BM](Images/BM@2x.png?raw=true) | BM | Bermuda |
-| ![BN](Images/BN@2x.png?raw=true) | BN | Brunei |
-| ![BO](Images/BO@2x.png?raw=true) | BO | Bolivia |
-| ![BR](Images/BR@2x.png?raw=true) | BR | Brazil |
-| ![BS](Images/BS@2x.png?raw=true) | BS | Bahamas |
-| ![BT](Images/BT@2x.png?raw=true) | BT | Bhutan |
-| ![BV](Images/BV@2x.png?raw=true) | BV | Bouvet Island |
-| ![BW](Images/BW@2x.png?raw=true) | BW | Botswana |
-| ![BY](Images/BY@2x.png?raw=true) | BY | Belarus |
-| ![BZ](Images/BZ@2x.png?raw=true) | BZ | Belize |
-| ![CA](Images/CA@2x.png?raw=true) | CA | Canada |
-| ![CC](Images/CC@2x.png?raw=true) | CC | Cocos (Keeling) Islands |
-| ![CD](Images/CD@2x.png?raw=true) | CD | Congo - Kinshasa |
-| ![CF](Images/CF@2x.png?raw=true) | CF | Central African Republic |
-| ![CG](Images/CG@2x.png?raw=true) | CG | Congo - Brazzaville |
-| ![CH](Images/CH@2x.png?raw=true) | CH | Switzerland |
-| ![CI](Images/CI@2x.png?raw=true) | CI | Côte d’Ivoire |
-| ![CK](Images/CK@2x.png?raw=true) | CK | Cook Islands |
-| ![CL](Images/CL@2x.png?raw=true) | CL | Chile |
-| ![CM](Images/CM@2x.png?raw=true) | CM | Cameroon |
-| ![CN](Images/CN@2x.png?raw=true) | CN | China |
-| ![CO](Images/CO@2x.png?raw=true) | CO | Colombia |
-| ![CR](Images/CR@2x.png?raw=true) | CR | Costa Rica |
-| ![CU](Images/CU@2x.png?raw=true) | CU | Cuba |
-| ![CV](Images/CV@2x.png?raw=true) | CV | Cape Verde |
-| ![CW](Images/CW@2x.png?raw=true) | CW | Curaçao |
-| ![CX](Images/CX@2x.png?raw=true) | CX | Christmas Island |
-| ![CY](Images/CY@2x.png?raw=true) | CY | Cyprus |
-| ![CZ](Images/CZ@2x.png?raw=true) | CZ | Czech Republic |
-| ![DE](Images/DE@2x.png?raw=true) | DE | Germany |
-| ![DJ](Images/DJ@2x.png?raw=true) | DJ | Djibouti |
-| ![DK](Images/DK@2x.png?raw=true) | DK | Denmark |
-| ![DM](Images/DM@2x.png?raw=true) | DM | Dominica |
-| ![DO](Images/DO@2x.png?raw=true) | DO | Dominican Republic |
-| ![DZ](Images/DZ@2x.png?raw=true) | DZ | Algeria |
-| ![EC](Images/EC@2x.png?raw=true) | EC | Ecuador |
-| ![EE](Images/EE@2x.png?raw=true) | EE | Estonia |
-| ![EG](Images/EG@2x.png?raw=true) | EG | Egypt |
-| ![ER](Images/ER@2x.png?raw=true) | ER | Eritrea |
-| ![ES](Images/ES@2x.png?raw=true) | ES | Spain |
-| ![ET](Images/ET@2x.png?raw=true) | ET | Ethiopia |
-| ![FI](Images/FI@2x.png?raw=true) | FI | Finland |
-| ![FJ](Images/FJ@2x.png?raw=true) | FJ | Fiji |
-| ![FK](Images/FK@2x.png?raw=true) | FK | Falkland Islands |
-| ![FM](Images/FM@2x.png?raw=true) | FM | Micronesia |
-| ![FO](Images/FO@2x.png?raw=true) | FO | Faroe Islands |
-| ![FR](Images/FR@2x.png?raw=true) | FR | France |
-| ![GA](Images/GA@2x.png?raw=true) | GA | Gabon |
-| ![GB](Images/GB@2x.png?raw=true) | GB | United Kingdom |
-| ![GD](Images/GD@2x.png?raw=true) | GD | Grenada |
-| ![GE](Images/GE@2x.png?raw=true) | GE | Georgia |
-| ![GF](Images/GF@2x.png?raw=true) | GF | French Guiana |
-| ![GG](Images/GG@2x.png?raw=true) | GG | Guernsey |
-| ![GH](Images/GH@2x.png?raw=true) | GH | Ghana |
-| ![GI](Images/GI@2x.png?raw=true) | GI | Gibraltar |
-| ![GL](Images/GL@2x.png?raw=true) | GL | Greenland |
-| ![GM](Images/GM@2x.png?raw=true) | GM | Gambia |
-| ![GN](Images/GN@2x.png?raw=true) | GN | Guinea |
-| ![GP](Images/GP@2x.png?raw=true) | GP | Guadeloupe |
-| ![GQ](Images/GQ@2x.png?raw=true) | GQ | Equatorial Guinea |
-| ![GR](Images/GR@2x.png?raw=true) | GR | Greece |
-| ![GS](Images/GS@2x.png?raw=true) | GS | So. Georgia & So. Sandwich Isl. |
-| ![GT](Images/GT@2x.png?raw=true) | GT | Guatemala |
-| ![GU](Images/GU@2x.png?raw=true) | GU | Guam |
-| ![GW](Images/GW@2x.png?raw=true) | GW | Guinea-Bissau |
-| ![GY](Images/GY@2x.png?raw=true) | GY | Guyana |
-| ![HK](Images/HK@2x.png?raw=true) | HK | Hong Kong SAR China |
-| ![HM](Images/HM@2x.png?raw=true) | HM | Heard & McDonald Islands |
-| ![HN](Images/HN@2x.png?raw=true) | HN | Honduras |
-| ![HR](Images/HR@2x.png?raw=true) | HR | Croatia |
-| ![HT](Images/HT@2x.png?raw=true) | HT | Haiti |
-| ![HU](Images/HU@2x.png?raw=true) | HU | Hungary |
-| ![ID](Images/ID@2x.png?raw=true) | ID | Indonesia |
-| ![IE](Images/IE@2x.png?raw=true) | IE | Ireland |
-| ![IL](Images/IL@2x.png?raw=true) | IL | Israel |
-| ![IM](Images/IM@2x.png?raw=true) | IM | Isle of Man |
-| ![IN](Images/IN@2x.png?raw=true) | IN | India |
-| ![IO](Images/IO@2x.png?raw=true) | IO | British Indian Ocean Territory |
-| ![IQ](Images/IQ@2x.png?raw=true) | IQ | Iraq |
-| ![IR](Images/IR@2x.png?raw=true) | IR | Iran |
-| ![IS](Images/IS@2x.png?raw=true) | IS | Iceland |
-| ![IT](Images/IT@2x.png?raw=true) | IT | Italy |
-| ![JE](Images/JE@2x.png?raw=true) | JE | Jersey |
-| ![JM](Images/JM@2x.png?raw=true) | JM | Jamaica |
-| ![JO](Images/JO@2x.png?raw=true) | JO | Jordan |
-| ![JP](Images/JP@2x.png?raw=true) | JP | Japan |
-| ![KE](Images/KE@2x.png?raw=true) | KE | Kenya |
-| ![KG](Images/KG@2x.png?raw=true) | KG | Kyrgyzstan |
-| ![KH](Images/KH@2x.png?raw=true) | KH | Cambodia |
-| ![KI](Images/KI@2x.png?raw=true) | KI | Kiribati |
-| ![KM](Images/KM@2x.png?raw=true) | KM | Comoros |
-| ![KN](Images/KN@2x.png?raw=true) | KN | St. Kitts & Nevis |
-| ![KP](Images/KP@2x.png?raw=true) | KP | North Korea |
-| ![KR](Images/KR@2x.png?raw=true) | KR | South Korea |
-| ![KW](Images/KW@2x.png?raw=true) | KW | Kuwait |
-| ![KY](Images/KY@2x.png?raw=true) | KY | Cayman Islands |
-| ![KZ](Images/KZ@2x.png?raw=true) | KZ | Kazakhstan |
-| ![LA](Images/LA@2x.png?raw=true) | LA | Laos |
-| ![LB](Images/LB@2x.png?raw=true) | LB | Lebanon |
-| ![LC](Images/LC@2x.png?raw=true) | LC | St. Lucia |
-| ![LI](Images/LI@2x.png?raw=true) | LI | Liechtenstein |
-| ![LK](Images/LK@2x.png?raw=true) | LK | Sri Lanka |
-| ![LR](Images/LR@2x.png?raw=true) | LR | Liberia |
-| ![LS](Images/LS@2x.png?raw=true) | LS | Lesotho |
-| ![LT](Images/LT@2x.png?raw=true) | LT | Lithuania |
-| ![LU](Images/LU@2x.png?raw=true) | LU | Luxembourg |
-| ![LV](Images/LV@2x.png?raw=true) | LV | Latvia |
-| ![LY](Images/LY@2x.png?raw=true) | LY | Libya |
-| ![MA](Images/MA@2x.png?raw=true) | MA | Morocco |
-| ![MC](Images/MC@2x.png?raw=true) | MC | Monaco |
-| ![MD](Images/MD@2x.png?raw=true) | MD | Moldova |
-| ![ME](Images/ME@2x.png?raw=true) | ME | Montenegro |
-| ![MG](Images/MG@2x.png?raw=true) | MG | Madagascar |
-| ![MH](Images/MH@2x.png?raw=true) | MH | Marshall Islands |
-| ![MK](Images/MK@2x.png?raw=true) | MK | Macedonia |
-| ![ML](Images/ML@2x.png?raw=true) | ML | Mali |
-| ![MM](Images/MM@2x.png?raw=true) | MM | Myanmar (Burma) |
-| ![MN](Images/MN@2x.png?raw=true) | MN | Mongolia |
-| ![MO](Images/MO@2x.png?raw=true) | MO | Macau SAR China |
-| ![MP](Images/MP@2x.png?raw=true) | MP | Northern Mariana Islands |
-| ![MQ](Images/MQ@2x.png?raw=true) | MQ | Martinique |
-| ![MR](Images/MR@2x.png?raw=true) | MR | Mauritania |
-| ![MS](Images/MS@2x.png?raw=true) | MS | Montserrat |
-| ![MT](Images/MT@2x.png?raw=true) | MT | Malta |
-| ![MU](Images/MU@2x.png?raw=true) | MU | Mauritius |
-| ![MV](Images/MV@2x.png?raw=true) | MV | Maldives |
-| ![MW](Images/MW@2x.png?raw=true) | MW | Malawi |
-| ![MX](Images/MX@2x.png?raw=true) | MX | Mexico |
-| ![MY](Images/MY@2x.png?raw=true) | MY | Malaysia |
-| ![MZ](Images/MZ@2x.png?raw=true) | MZ | Mozambique |
-| ![NA](Images/NA@2x.png?raw=true) | NA | Namibia |
-| ![NC](Images/NC@2x.png?raw=true) | NC | New Caledonia |
-| ![NE](Images/NE@2x.png?raw=true) | NE | Niger |
-| ![NF](Images/NF@2x.png?raw=true) | NF | Norfolk Island |
-| ![NG](Images/NG@2x.png?raw=true) | NG | Nigeria |
-| ![NI](Images/NI@2x.png?raw=true) | NI | Nicaragua |
-| ![NL](Images/NL@2x.png?raw=true) | NL | Netherlands |
-| ![NO](Images/NO@2x.png?raw=true) | NO | Norway |
-| ![NP](Images/NP@2x.png?raw=true) | NP | Nepal |
-| ![NR](Images/NR@2x.png?raw=true) | NR | Nauru |
-| ![NU](Images/NU@2x.png?raw=true) | NU | Niue |
-| ![NZ](Images/NZ@2x.png?raw=true) | NZ | New Zealand |
-| ![OM](Images/OM@2x.png?raw=true) | OM | Oman |
-| ![PA](Images/PA@2x.png?raw=true) | PA | Panama |
-| ![PE](Images/PE@2x.png?raw=true) | PE | Peru |
-| ![PF](Images/PF@2x.png?raw=true) | PF | French Polynesia |
-| ![PG](Images/PG@2x.png?raw=true) | PG | Papua New Guinea |
-| ![PH](Images/PH@2x.png?raw=true) | PH | Philippines |
-| ![PK](Images/PK@2x.png?raw=true) | PK | Pakistan |
-| ![PL](Images/PL@2x.png?raw=true) | PL | Poland |
-| ![PM](Images/PM@2x.png?raw=true) | PM | St. Pierre & Miquelon |
-| ![PN](Images/PN@2x.png?raw=true) | PN | Pitcairn Islands |
-| ![PR](Images/PR@2x.png?raw=true) | PR | Puerto Rico |
-| ![PS](Images/PS@2x.png?raw=true) | PS | Palestinian Territories |
-| ![PT](Images/PT@2x.png?raw=true) | PT | Portugal |
-| ![PW](Images/PW@2x.png?raw=true) | PW | Palau |
-| ![PY](Images/PY@2x.png?raw=true) | PY | Paraguay |
-| ![QA](Images/QA@2x.png?raw=true) | QA | Qatar |
-| ![RE](Images/RE@2x.png?raw=true) | RE | Réunion |
-| ![RO](Images/RO@2x.png?raw=true) | RO | Romania |
-| ![RS](Images/RS@2x.png?raw=true) | RS | Serbia |
-| ![RU](Images/RU@2x.png?raw=true) | RU | Russia |
-| ![RW](Images/RW@2x.png?raw=true) | RW | Rwanda |
-| ![SA](Images/SA@2x.png?raw=true) | SA | Saudi Arabia |
-| ![SB](Images/SB@2x.png?raw=true) | SB | Solomon Islands |
-| ![SC](Images/SC@2x.png?raw=true) | SC | Seychelles |
-| ![SD](Images/SD@2x.png?raw=true) | SD | Sudan |
-| ![SE](Images/SE@2x.png?raw=true) | SE | Sweden |
-| ![SG](Images/SG@2x.png?raw=true) | SG | Singapore |
-| ![SI](Images/SI@2x.png?raw=true) | SI | Slovenia |
-| ![SJ](Images/SJ@2x.png?raw=true) | SJ | Svalbard & Jan Mayen |
-| ![SK](Images/SK@2x.png?raw=true) | SK | Slovakia |
-| ![SL](Images/SL@2x.png?raw=true) | SL | Sierra Leone |
-| ![SM](Images/SM@2x.png?raw=true) | SM | San Marino |
-| ![SN](Images/SN@2x.png?raw=true) | SN | Senegal |
-| ![SO](Images/SO@2x.png?raw=true) | SO | Somalia |
-| ![SR](Images/SR@2x.png?raw=true) | SR | Suriname |
-| ![SS](Images/SS@2x.png?raw=true) | SS | South Sudan |
-| ![ST](Images/ST@2x.png?raw=true) | ST | São Tomé & Príncipe |
-| ![SV](Images/SV@2x.png?raw=true) | SV | El Salvador |
-| ![SX](Images/SX@2x.png?raw=true) | SX | Sint Maarten |
-| ![SY](Images/SY@2x.png?raw=true) | SY | Syria |
-| ![SZ](Images/SZ@2x.png?raw=true) | SZ | Swaziland |
-| ![TC](Images/TC@2x.png?raw=true) | TC | Turks & Caicos Islands |
-| ![TD](Images/TD@2x.png?raw=true) | TD | Chad |
-| ![TF](Images/TF@2x.png?raw=true) | TF | French Southern Territories |
-| ![TG](Images/TG@2x.png?raw=true) | TG | Togo |
-| ![TH](Images/TH@2x.png?raw=true) | TH | Thailand |
-| ![TJ](Images/TJ@2x.png?raw=true) | TJ | Tajikistan |
-| ![TK](Images/TK@2x.png?raw=true) | TK | Tokelau |
-| ![TL](Images/TL@2x.png?raw=true) | TL | Timor-Leste |
-| ![TM](Images/TM@2x.png?raw=true) | TM | Turkmenistan |
-| ![TN](Images/TN@2x.png?raw=true) | TN | Tunisia |
-| ![TO](Images/TO@2x.png?raw=true) | TO | Tonga |
-| ![TR](Images/TR@2x.png?raw=true) | TR | Turkey |
-| ![TT](Images/TT@2x.png?raw=true) | TT | Trinidad & Tobago |
-| ![TV](Images/TV@2x.png?raw=true) | TV | Tuvalu |
-| ![TW](Images/TW@2x.png?raw=true) | TW | Taiwan |
-| ![TZ](Images/TZ@2x.png?raw=true) | TZ | Tanzania |
-| ![UA](Images/UA@2x.png?raw=true) | UA | Ukraine |
-| ![UG](Images/UG@2x.png?raw=true) | UG | Uganda |
-| ![UM](Images/UM@2x.png?raw=true) | UM | U.S. Outlying Islands |
-| ![US](Images/US@2x.png?raw=true) | US | United States |
-| ![UY](Images/UY@2x.png?raw=true) | UY | Uruguay |
-| ![UZ](Images/UZ@2x.png?raw=true) | UZ | Uzbekistan |
-| ![VA](Images/VA@2x.png?raw=true) | VA | Vatican City |
-| ![VC](Images/VC@2x.png?raw=true) | VC | St. Vincent & Grenadines |
-| ![VE](Images/VE@2x.png?raw=true) | VE | Venezuela |
-| ![VG](Images/VG@2x.png?raw=true) | VG | British Virgin Islands |
-| ![VI](Images/VI@2x.png?raw=true) | VI | U.S. Virgin Islands |
-| ![VN](Images/VN@2x.png?raw=true) | VN | Vietnam |
-| ![VU](Images/VU@2x.png?raw=true) | VU | Vanuatu |
-| ![WF](Images/WF@2x.png?raw=true) | WF | Wallis & Futuna |
-| ![WS](Images/WS@2x.png?raw=true) | WS | Samoa |
-| ![XK](Images/XK@2x.png?raw=true) | XK | Kosovo |
-| ![YE](Images/YE@2x.png?raw=true) | YE | Yemen |
-| ![YT](Images/YT@2x.png?raw=true) | YT | Mayotte |
-| ![ZA](Images/ZA@2x.png?raw=true) | ZA | South Africa |
-| ![ZM](Images/ZM@2x.png?raw=true) | ZM | Zambia |
-| ![ZW](Images/ZW@2x.png?raw=true) | ZW | Zimbabwe |
+| ![AD](Images/6kxfttvbfkg4ywupx6g9zc16o@2x.png?raw=true) | AD | 6kxfttvbfkg4ywupx6g9zc16o | Andorra |
+| ![AE](Images/13y072b531iotfuk9ll20xt4u@2x.png?raw=true) | AE | 13y072b531iotfuk9ll20xt4u | United Arab Emirates |
+| ![AF](Images/6xne7xe59eujck02uovziom7p@2x.png?raw=true) | AF | 6xne7xe59eujck02uovziom7p | Afghanistan |
+| ![AG](Images/5ptslcq1vbobftatllej94tkr@2x.png?raw=true) | AG | 5ptslcq1vbobftatllej94tkr | Antigua & Barbuda |
+| ![AI](Images/6r3zd5vbqw7gzp93y2r25ojbk@2x.png?raw=true) | AI | 6r3zd5vbqw7gzp93y2r25ojbk | Anguilla |
+| ![AL](Images/17zsm8shejejls2on1ffil3op@2x.png?raw=true) | AL | 17zsm8shejejls2on1ffil3op | Albania |
+| ![AM](Images/687vx665s4d88stgnq72a84k6@2x.png?raw=true) | AM | 687vx665s4d88stgnq72a84k6 | Armenia |
+| ![AO](Images/3k53bkrjx5zsxchc6e3mcd834@2x.png?raw=true) | AO | 3k53bkrjx5zsxchc6e3mcd834 | Angola |
+| ![AR](Images/2vovxa97k7v7ofa85dah2xktb@2x.png?raw=true) | AR | 2vovxa97k7v7ofa85dah2xktb | Argentina |
+| ![AS](Images/5xdsl5tinkocdk72ny1pgsj6x@2x.png?raw=true) | AS | 5xdsl5tinkocdk72ny1pgsj6x | American Samoa |
+| ![AT](Images/hcs1bd49qliqqity6o268jyt@2x.png?raw=true) | AT | hcs1bd49qliqqity6o268jyt | Austria |
+| ![AU](Images/u5ieemi69z72c3bgczyy68lo@2x.png?raw=true) | AU | u5ieemi69z72c3bgczyy68lo | Australia |
+| ![AW](Images/612w8wkfhgud56fa4a01fxw04@2x.png?raw=true) | AW | 612w8wkfhgud56fa4a01fxw04 | Aruba |
+| ![AZ](Images/52sufqqq7vid3xa6iljx6obcz@2x.png?raw=true) | AZ | 52sufqqq7vid3xa6iljx6obcz | Azerbaijan |
+| ![BA](Images/4fue8u54361o79fbiu9qwxjer@2x.png?raw=true) | BA | 4fue8u54361o79fbiu9qwxjer | Bosnia & Herzegovina |
+| ![BB](Images/6s2kneg94h46sha1zdawibpj0@2x.png?raw=true) | BB | 6s2kneg94h46sha1zdawibpj0 | Barbados |
+| ![BD](Images/7fehvaq75zecgbbo70z41b24o@2x.png?raw=true) | BD | 7fehvaq75zecgbbo70z41b24o | Bangladesh |
+| ![BE](Images/4wbzjcclyefma1ourvjsu4q2j@2x.png?raw=true) | BE | 4wbzjcclyefma1ourvjsu4q2j | Belgium |
+| ![BF](Images/2ggql4uo9h0p3c67wkm68ibol@2x.png?raw=true) | BF | 2ggql4uo9h0p3c67wkm68ibol | Burkina Faso |
+| ![BG](Images/5a1vsxg8tbnsk65iefq1q8tlt@2x.png?raw=true) | BG | 5a1vsxg8tbnsk65iefq1q8tlt | Bulgaria |
+| ![BH](Images/4j3eg4ch3tdp2uh7kblm8yvvj@2x.png?raw=true) | BH | 4j3eg4ch3tdp2uh7kblm8yvvj | Bahrain |
+| ![BI](Images/5d7e5052i0sb4wwloukhpafuu@2x.png?raw=true) | BI | 5d7e5052i0sb4wwloukhpafuu | Burundi |
+| ![BJ](Images/3o5wco7tkqgfmys9exmt5fo2h@2x.png?raw=true) | BJ | 3o5wco7tkqgfmys9exmt5fo2h | Benin |
+| ![BM](Images/4x2e37ksohrzsxdkg0mgfe5ag@2x.png?raw=true) | BM | 4x2e37ksohrzsxdkg0mgfe5ag | Bermuda |
+| ![BN](Images/g881zuu4oc890k65w5rhqgjo@2x.png?raw=true) | BN | g881zuu4oc890k65w5rhqgjo | Brunei |
+| ![BO](Images/3dgy24s32p56l29s66imputcy@2x.png?raw=true) | BO | 3dgy24s32p56l29s66imputcy | Bolivia |
+| ![BR](Images/2vufyvpoxd9lfl9f6vpp7tz6y@2x.png?raw=true) | BR | 2vufyvpoxd9lfl9f6vpp7tz6y | Brazil |
+| ![BS](Images/5y0rigqxyx99jfzx7gsse0zj4@2x.png?raw=true) | BS | 5y0rigqxyx99jfzx7gsse0zj4 | Bahamas |
+| ![BT](Images/6370yfb19hhyuev2ibgmw9gb4@2x.png?raw=true) | BT | 6370yfb19hhyuev2ibgmw9gb4 | Bhutan |
+| ![BW](Images/4wpvgb16ehpymp85e16rbnufn@2x.png?raw=true) | BW | 4wpvgb16ehpymp85e16rbnufn | Botswana |
+| ![BY](Images/2vn7xzv9g752y1h5ufjzr27i8@2x.png?raw=true) | BY | 2vn7xzv9g752y1h5ufjzr27i8 | Belarus |
+| ![BZ](Images/1o85e1k63qyysa7c6asegj7hn@2x.png?raw=true) | BZ | 1o85e1k63qyysa7c6asegj7hn | Belize |
+| ![CA](Images/1iaoypzp6syf32cz9l15pzp7e@2x.png?raw=true) | CA | 1iaoypzp6syf32cz9l15pzp7e | Canada |
+| ![CD](Images/6xq2smnxqvc5bh7vzza9ljiy9@2x.png?raw=true) | CD | 6xq2smnxqvc5bh7vzza9ljiy9 | Congo - Kinshasa |
+| ![CF](Images/4grlavjd5jd86praiug1voxmd@2x.png?raw=true) | CF | 4grlavjd5jd86praiug1voxmd | Central African Republic |
+| ![CG](Images/1s2y6o0lwj69dj5ib5pid8f6r@2x.png?raw=true) | CG | 1s2y6o0lwj69dj5ib5pid8f6r | Congo - Brazzaville |
+| ![CH](Images/3bh70jgvc5mn58x0byjkuda17@2x.png?raw=true) | CH | 3bh70jgvc5mn58x0byjkuda17 | Switzerland |
+| ![CI](Images/tin6kf561ywonqan0mettr98@2x.png?raw=true) | CI | tin6kf561ywonqan0mettr98 | Côte d’Ivoire |
+| ![CK](Images/36tlrxuj3d5h75s59zfje2ls0@2x.png?raw=true) | CK | 36tlrxuj3d5h75s59zfje2ls0 | Cook Islands |
+| ![CL](Images/32tb8d7824xg4i0ybxzssczu0@2x.png?raw=true) | CL | 32tb8d7824xg4i0ybxzssczu0 | Chile |
+| ![CM](Images/4eb9feio6u267dd1jcwaf38mt@2x.png?raw=true) | CM | 4eb9feio6u267dd1jcwaf38mt | Cameroon |
+| ![CN](Images/6e8huv1g6g173rptk3y6jsg5z@2x.png?raw=true) | CN | 6e8huv1g6g173rptk3y6jsg5z | China |
+| ![CO](Images/6kby8rq1p01fg5ds38ckkrcs5@2x.png?raw=true) | CO | 6kby8rq1p01fg5ds38ckkrcs5 | Colombia |
+| ![CR](Images/48emauy3fucokp86skcs5alh8@2x.png?raw=true) | CR | 48emauy3fucokp86skcs5alh8 | Costa Rica |
+| ![CU](Images/ws166hrbk0nwte3ypn8mm36g@2x.png?raw=true) | CU | -ws166hrbk0nwte3ypn8mm36g | Cuba |
+| ![CV](Images/7235kgq23bu1v4qwk491u58h0@2x.png?raw=true) | CV | 7235kgq23bu1v4qwk491u58h0 | Cape Verde |
+| ![CW](Images/5im58ram567ao2fbnz39sm8vk@2x.png?raw=true) | CW | 5im58ram567ao2fbnz39sm8vk | Curaçao |
+| ![CY](Images/3om8cj5nhmq1rzzkykubm5icj@2x.png?raw=true) | CY | 3om8cj5nhmq1rzzkykubm5icj | Cyprus |
+| ![CZ](Images/5md5tpwr2nmqao528prx43jr7@2x.png?raw=true) | CZ | 5md5tpwr2nmqao528prx43jr7 | Czech Republic |
+| ![DE](Images/36min0qztu8eydwvpv8t1is0m@2x.png?raw=true) | DE | 36min0qztu8eydwvpv8t1is0m | Germany |
+| ![DJ](Images/fxliob37s4qcre25mwoe13u2@2x.png?raw=true) | DJ | fxliob37s4qcre25mwoe13u2 | Djibouti |
+| ![DK](Images/5adf60vwiw2f2mibyq1k4ex7i@2x.png?raw=true) | DK | 5adf60vwiw2f2mibyq1k4ex7i | Denmark |
+| ![DM](Images/755ody1991vbjqmd2wnbg9xn8@2x.png?raw=true) | DM | 755ody1991vbjqmd2wnbg9xn8 | Dominica |
+| ![DO](Images/za9wn9847gulllfsey917tmk@2x.png?raw=true) | DO | za9wn9847gulllfsey917tmk | Dominican Republic |
+| ![DZ](Images/1ayprcriqhb8iv10ch70clppu@2x.png?raw=true) | DZ | 1ayprcriqhb8iv10ch70clppu | Algeria |
+| ![EC](Images/6pyj2bytt2osbjk69owzfehcg@2x.png?raw=true) | EC | 6pyj2bytt2osbjk69owzfehcg | Ecuador |
+| ![EE](Images/64smib5liu1qh78iaylufxj99@2x.png?raw=true) | EE | 64smib5liu1qh78iaylufxj99 | Estonia |
+| ![EG](Images/42vt7mha0thcwd0ihw3p29x5i@2x.png?raw=true) | EG | 42vt7mha0thcwd0ihw3p29x5i | Egypt |
+| ![ER](Images/76fkjar42okgr6loos2xb6ka1@2x.png?raw=true) | ER | 76fkjar42okgr6loos2xb6ka1 | Eritrea |
+| ![ES](Images/49ih1pwv3ahshdf8uzrimi54c@2x.png?raw=true) | ES | 49ih1pwv3ahshdf8uzrimi54c | Spain |
+| ![ET](Images/5rbnsdndc8mp36d76dwuzd2ow@2x.png?raw=true) | ET | 5rbnsdndc8mp36d76dwuzd2ow | Ethiopia |
+| ![FI](Images/2u07e54v5dprsugdvddpq5ync@2x.png?raw=true) | FI | 2u07e54v5dprsugdvddpq5ync | Finland |
+| ![FJ](Images/6tuxlyvvwwer41ykpe8c7tfe1@2x.png?raw=true) | FJ | 6tuxlyvvwwer41ykpe8c7tfe1 | Fiji |
+| ![FM](Images/705qdga96h6l0gxcbdrmx6nqv@2x.png?raw=true) | FM | 705qdga96h6l0gxcbdrmx6nqv | Micronesia |
+| ![FO](Images/1glg6jsz6v1fkk8y9pq4fqjc4@2x.png?raw=true) | FO | 1glg6jsz6v1fkk8y9pq4fqjc4 | Faroe Islands |
+| ![FR](Images/7gww28djs405rfga69smki84o@2x.png?raw=true) | FR | 7gww28djs405rfga69smki84o | France |
+| ![GA](Images/6jfjrlsdz5ns00g4gvk9a6xav@2x.png?raw=true) | GA | 6jfjrlsdz5ns00g4gvk9a6xav | Gabon |
+| ![GB](Images/258l9t5sm55592i08mdpqzr3t@2x.png?raw=true) | GB | 258l9t5sm55592i08mdpqzr3t | United Kingdom |
+| ![GB-ENG](Images/1fk5l4hkqk12i7zske6mcqju6@2x.png?raw=true) | GB-ENG | 1fk5l4hkqk12i7zske6mcqju6 | England |
+| ![GB-NIR](Images/5euslv7jutsauoqt3o2lj9bvi@2x.png?raw=true) | GB-NIR | 5euslv7jutsauoqt3o2lj9bvi | Northern Ireland |
+| ![GB-SCT](Images/1xf68d0a8lnnq30hnnn8kr6ut@2x.png?raw=true) | GB-SCT | 1xf68d0a8lnnq30hnnn8kr6ut | Scotland |
+| ![GB-WLS](Images/26ilvvgth36hmq6lgq8cy5cb5@2x.png?raw=true) | GB-WLS | 26ilvvgth36hmq6lgq8cy5cb5 | Wales |
+| ![GD](Images/187lxllgvpivhdcyw002tue8m@2x.png?raw=true) | GD | 187lxllgvpivhdcyw002tue8m | Grenada |
+| ![GE](Images/55mqz7j6585f2jhgfhn62lomr@2x.png?raw=true) | GE | 55mqz7j6585f2jhgfhn62lomr | Georgia |
+| ![GF](Images/7hfpv914wxvnf77qk026ze0bh@2x.png?raw=true) | GF | 7hfpv914wxvnf77qk026ze0bh | French Guiana |
+| ![GG](Images/1xbbi74x4vjke8z6lng5wez5@2x.png?raw=true) | GG | 1xbbi74x4vjke8z6lng5wez5 | Guernsey |
+| ![GH](Images/2q2sw72utw5gu9t5y4knckwba@2x.png?raw=true) | GH | 2q2sw72utw5gu9t5y4knckwba | Ghana |
+| ![GI](Images/1uebysp0nph4vtqw6gsv347jw@2x.png?raw=true) | GI | 1uebysp0nph4vtqw6gsv347jw | Gibraltar |
+| ![GM](Images/4ix3ulx7h2a09r16jo9qdbuvp@2x.png?raw=true) | GM | 4ix3ulx7h2a09r16jo9qdbuvp | Gambia |
+| ![GN](Images/4i9sg55wigitrfx7290f59ceo@2x.png?raw=true) | GN | 4i9sg55wigitrfx7290f59ceo | Guinea |
+| ![GP](Images/4u7nk4lz0pms78k7jjbjwvgce@2x.png?raw=true) | GP | 4u7nk4lz0pms78k7jjbjwvgce | Guadeloupe |
+| ![GQ](Images/4z1n5a2w0i7miu70ot64452ak@2x.png?raw=true) | GQ | 4z1n5a2w0i7miu70ot64452ak | Equatorial Guinea |
+| ![GR](Images/6lpgd60z890no2v46zdecrcss@2x.png?raw=true) | GR | 6lpgd60z890no2v46zdecrcss | Greece |
+| ![GT](Images/6bw57gk867vfrep8b5e4ykh24@2x.png?raw=true) | GT | 6bw57gk867vfrep8b5e4ykh24 | Guatemala |
+| ![GU](Images/78gdj9ih3nynnc4uggdi4f8fa@2x.png?raw=true) | GU | 78gdj9ih3nynnc4uggdi4f8fa | Guam |
+| ![GW](Images/5ikz7810612v7a6l5u6gxa6vm@2x.png?raw=true) | GW | 5ikz7810612v7a6l5u6gxa6vm | Guinea-Bissau |
+| ![GY](Images/zpgq0l9kubdo7r4zonkowr1c@2x.png?raw=true) | GY | zpgq0l9kubdo7r4zonkowr1c | Guyana |
+| ![HK](Images/5mqvtybzlyttafefvps14mvt3@2x.png?raw=true) | HK | 5mqvtybzlyttafefvps14mvt3 | Hong Kong SAR China |
+| ![HN](Images/56ftnqeq3x3j77uone8qm5ow6@2x.png?raw=true) | HN | 56ftnqeq3x3j77uone8qm5ow6 | Honduras |
+| ![HR](Images/37hlakrwxyuzovaeoo4sezusp@2x.png?raw=true) | HR | 37hlakrwxyuzovaeoo4sezusp | Croatia |
+| ![HT](Images/5mp58o38d0mr5qt8g4o6l7efg@2x.png?raw=true) | HT | 5mp58o38d0mr5qt8g4o6l7efg | Haiti |
+| ![HU](Images/1vy5vlux7mj2r7r9ktd71hhpo@2x.png?raw=true) | HU | 1vy5vlux7mj2r7r9ktd71hhpo | Hungary |
+| ![ID](Images/1zi2c00k6skx48tn692uem0n6@2x.png?raw=true) | ID | 1zi2c00k6skx48tn692uem0n6 | Indonesia |
+| ![IE](Images/63nepb66un7juhglo2g6rezcl@2x.png?raw=true) | IE | 63nepb66un7juhglo2g6rezcl | Ireland |
+| ![IL](Images/4bnqn6mt5vyslpxfuqdrcmpgp@2x.png?raw=true) | IL | 4bnqn6mt5vyslpxfuqdrcmpgp | Israel |
+| ![IM](Images/4tib6ttiuoaackjrzhiask5i8@2x.png?raw=true) | IM | 4tib6ttiuoaackjrzhiask5i8 | Isle of Man |
+| ![IN](Images/pu2isxryiewd7pvejah6oqex@2x.png?raw=true) | IN | pu2isxryiewd7pvejah6oqex | India |
+| ![IQ](Images/1uzblzx1s42jn6zk6hivjzby8@2x.png?raw=true) | IQ | 1uzblzx1s42jn6zk6hivjzby8 | Iraq |
+| ![IR](Images/e53g9hr2d3kasm34uumbg8r4@2x.png?raw=true) | IR | e53g9hr2d3kasm34uumbg8r4 | Iran |
+| ![IS](Images/4jjsm5a20nnxgw5cus6b7yxc6@2x.png?raw=true) | IS | 4jjsm5a20nnxgw5cus6b7yxc6 | Iceland |
+| ![IT](Images/25f2cmb2r8mk5rj92tzer6kvv@2x.png?raw=true) | IT | 25f2cmb2r8mk5rj92tzer6kvv | Italy |
+| ![JE](Images/7fdmc6umz22k7ndi5xkif7xaw@2x.png?raw=true) | JE | 7fdmc6umz22k7ndi5xkif7xaw | Jersey |
+| ![JM](Images/gimxu1vjwoa2xrecyd9gtyoc@2x.png?raw=true) | JM | gimxu1vjwoa2xrecyd9gtyoc | Jamaica |
+| ![JO](Images/5067agkwm6luzilwyfwth1dic@2x.png?raw=true) | JO | 5067agkwm6luzilwyfwth1dic | Jordan |
+| ![JP](Images/lxyibh89lpdc0bfian1nx0xq@2x.png?raw=true) | JP | lxyibh89lpdc0bfian1nx0xq | Japan |
+| ![KE](Images/7bj2q2zb0n47lb9g55dnvfr2s@2x.png?raw=true) | KE | 7bj2q2zb0n47lb9g55dnvfr2s | Kenya |
+| ![KG](Images/10rgz0guzju8aqeo6aiv346ei@2x.png?raw=true) | KG | 10rgz0guzju8aqeo6aiv346ei | Kyrgyzstan |
+| ![KH](Images/38jje66sadw9avkq6pi3jhffr@2x.png?raw=true) | KH | 38jje66sadw9avkq6pi3jhffr | Cambodia |
+| ![KI](Images/lqccgy3ylct33pblebvgce0m@2x.png?raw=true) | KI | lqccgy3ylct33pblebvgce0m | Kiribati |
+| ![KM](Images/40fy8dkxp9lwfufwmbnctzlz6@2x.png?raw=true) | KM | 40fy8dkxp9lwfufwmbnctzlz6 | Comoros |
+| ![KN](Images/xwj3a17iorlybtjfqnwmhlwy@2x.png?raw=true) | KN | xwj3a17iorlybtjfqnwmhlwy | St. Kitts & Nevis |
+| ![KP](Images/t46a4q7zl3d55jzbet940rph@2x.png?raw=true) | KP | t46a4q7zl3d55jzbet940rph | North Korea |
+| ![KR](Images/4vzpxtqkiwx0puygnmayr74di@2x.png?raw=true) | KR | 4vzpxtqkiwx0puygnmayr74di | South Korea |
+| ![KW](Images/70rn9hy1i32yu04uos65wvgs5@2x.png?raw=true) | KW | 70rn9hy1i32yu04uos65wvgs5 | Kuwait |
+| ![KY](Images/cdea42u1qgvlf40q5xkcyndq@2x.png?raw=true) | KY | cdea42u1qgvlf40q5xkcyndq | Cayman Islands |
+| ![KZ](Images/6kewn14jj4ncyzghlbu61hna6@2x.png?raw=true) | KZ | 6kewn14jj4ncyzghlbu61hna6 | Kazakhstan |
+| ![LA](Images/26779fpzv0fepytrl40k9pxtl@2x.png?raw=true) | LA | 26779fpzv0fepytrl40k9pxtl | Laos |
+| ![LB](Images/x78kryrxd9j9dfj4mtec292b@2x.png?raw=true) | LB | x78kryrxd9j9dfj4mtec292b | Lebanon |
+| ![LC](Images/1at7am98hz0qdphqbcxnbpdwt@2x.png?raw=true) | LC | 1at7am98hz0qdphqbcxnbpdwt | St. Lucia |
+| ![LI](Images/1v02eezboe03xoeshga0qd6ad@2x.png?raw=true) | LI | 1v02eezboe03xoeshga0qd6ad | Liechtenstein |
+| ![LK](Images/5yei7oqz4ku57trm484fgw1gr@2x.png?raw=true) | LK | 5yei7oqz4ku57trm484fgw1gr | Sri Lanka |
+| ![LR](Images/78fh41lat89a3xaqjqcdzb4ul@2x.png?raw=true) | LR | 78fh41lat89a3xaqjqcdzb4ul | Liberia |
+| ![LS](Images/7bif2q3mk2x38qpil3e5ri2ef@2x.png?raw=true) | LS | 7bif2q3mk2x38qpil3e5ri2ef | Lesotho |
+| ![LT](Images/366yd1wf1hzvvjb5u6r59rl1w@2x.png?raw=true) | LT | 366yd1wf1hzvvjb5u6r59rl1w | Lithuania |
+| ![LU](Images/f2r46apchse9eg3n9c9pupfs@2x.png?raw=true) | LU | f2r46apchse9eg3n9c9pupfs | Luxembourg |
+| ![LV](Images/6s9bglosczqlp9cxh3ze5hdm5@2x.png?raw=true) | LV | 6s9bglosczqlp9cxh3ze5hdm5 | Latvia |
+| ![LY](Images/u42u510tspw3jy1ihkb3mdx9@2x.png?raw=true) | LY | u42u510tspw3jy1ihkb3mdx9 | Libya |
+| ![MA](Images/2xdcc39z1k79pnjbtn9x31wdh@2x.png?raw=true) | MA | 2xdcc39z1k79pnjbtn9x31wdh | Morocco |
+| ![MC](Images/22j7jr6dlpt6w5xx8oqr80sf4@2x.png?raw=true) | MC | 22j7jr6dlpt6w5xx8oqr80sf4 | Monaco |
+| ![MD](Images/389mdnq78a55g2gr040a3mmtj@2x.png?raw=true) | MD | 389mdnq78a55g2gr040a3mmtj | Moldova |
+| ![ME](Images/1411jebgwo2ja1erogsq81lg9@2x.png?raw=true) | ME | 1411jebgwo2ja1erogsq81lg9 | Montenegro |
+| ![MG](Images/4pidpq12frm06h0wij6mzhhdz@2x.png?raw=true) | MG | 4pidpq12frm06h0wij6mzhhdz | Madagascar |
+| ![MK](Images/1lesyxylc5eza0a4z87t9azcc@2x.png?raw=true) | MK | 1lesyxylc5eza0a4z87t9azcc | Macedonia |
+| ![ML](Images/d0v29nncgikdswlxpdq553zz@2x.png?raw=true) | ML | d0v29nncgikdswlxpdq553zz | Mali |
+| ![MM](Images/qr4bp3xzkf0frhwnit3diakz@2x.png?raw=true) | MM | qr4bp3xzkf0frhwnit3diakz | Myanmar (Burma) |
+| ![MN](Images/19cw8kmvywtowb9zfnfswhko8@2x.png?raw=true) | MN | 19cw8kmvywtowb9zfnfswhko8 | Mongolia |
+| ![MO](Images/3xtmmx0vyvd52lcs5f54bbhef@2x.png?raw=true) | MO | 3xtmmx0vyvd52lcs5f54bbhef | Macau SAR China |
+| ![MP](Images/4b0n2ncmol2vteeoinayla7hz@2x.png?raw=true) | MP | 4b0n2ncmol2vteeoinayla7hz | Northern Mariana Islands |
+| ![MQ](Images/1eb70pvuqssbbg3yamdba5ie5@2x.png?raw=true) | MQ | 1eb70pvuqssbbg3yamdba5ie5 | Martinique |
+| ![MR](Images/fddgtcs6irg28x9oqietkb6x@2x.png?raw=true) | MR | fddgtcs6irg28x9oqietkb6x | Mauritania |
+| ![MS](Images/1wn3jd8nvcs9thpyyz7gu52z@2x.png?raw=true) | MS | 1wn3jd8nvcs9thpyyz7gu52z | Montserrat |
+| ![MT](Images/52j1myzb4go3nqu8crtu7ulc1@2x.png?raw=true) | MT | 52j1myzb4go3nqu8crtu7ulc1 | Malta |
+| ![MU](Images/7cypj0lbirqhd1l81ulhflstr@2x.png?raw=true) | MU | 7cypj0lbirqhd1l81ulhflstr | Mauritius |
+| ![MV](Images/41q3d9li8vvffw2up5pwcbima@2x.png?raw=true) | MV | 41q3d9li8vvffw2up5pwcbima | Maldives |
+| ![MW](Images/4u57ibmgq0277hizshm4bfa3n@2x.png?raw=true) | MW | 4u57ibmgq0277hizshm4bfa3n | Malawi |
+| ![MX](Images/5trdr3jf42i20zj1hnkvcytr6@2x.png?raw=true) | MX | 5trdr3jf42i20zj1hnkvcytr6 | Mexico |
+| ![MY](Images/2nkhuc4d9vq5llknmxpa0wbhy@2x.png?raw=true) | MY | 2nkhuc4d9vq5llknmxpa0wbhy | Malaysia |
+| ![MZ](Images/4l6me0leyvb0ysnsoepyvmh4g@2x.png?raw=true) | MZ | 4l6me0leyvb0ysnsoepyvmh4g | Mozambique |
+| ![NA](Images/5gnafp0jaansh8iqoslamuwdc@2x.png?raw=true) | NA | 5gnafp0jaansh8iqoslamuwdc | Namibia |
+| ![NC](Images/30zt6ojzg2fiyslvzs4r1sj5c@2x.png?raw=true) | NC | 30zt6ojzg2fiyslvzs4r1sj5c | New Caledonia |
+| ![NE](Images/1mhgvne4pkksmt32259xg7vec@2x.png?raw=true) | NE | 1mhgvne4pkksmt32259xg7vec | Niger |
+| ![NG](Images/63pvdwrsiq5b07mzi8igqei9p@2x.png?raw=true) | NG | 63pvdwrsiq5b07mzi8igqei9p | Nigeria |
+| ![NI](Images/4of7fctqcqbj3rai95vd4jk26@2x.png?raw=true) | NI | 4of7fctqcqbj3rai95vd4jk26 | Nicaragua |
+| ![NL](Images/6hzi5pltnz67q4la8yli9qfv6@2x.png?raw=true) | NL | 6hzi5pltnz67q4la8yli9qfv6 | Netherlands |
+| ![NO](Images/7f16iy4w8u8ogyn6pfooqwv5z@2x.png?raw=true) | NO | 7f16iy4w8u8ogyn6pfooqwv5z | Norway |
+| ![NP](Images/51iq28c5d9aip8pf4p6dxocgv@2x.png?raw=true) | NP | 51iq28c5d9aip8pf4p6dxocgv | Nepal |
+| ![NR](Images/16b77k0lvgcugj3rm13djql8f@2x.png?raw=true) | NR | 16b77k0lvgcugj3rm13djql8f | Nauru |
+| ![NU](Images/34405polrnai04fd35oqhsxo9@2x.png?raw=true) | NU | 34405polrnai04fd35oqhsxo9 | Niue |
+| ![NZ](Images/wcq2y28a27syx5do1k2i2nj8@2x.png?raw=true) | NZ | wcq2y28a27syx5do1k2i2nj8 | New Zealand |
+| ![OM](Images/7er8r20ewopkflfj679v1dol5@2x.png?raw=true) | OM | 7er8r20ewopkflfj679v1dol5 | Oman |
+| ![PA](Images/5nhk7v9jq6dqmfbn4hiihhofv@2x.png?raw=true) | PA | 5nhk7v9jq6dqmfbn4hiihhofv | Panama |
+| ![PE](Images/2uib9hdovpcye4re2l3omr4dl@2x.png?raw=true) | PE | 2uib9hdovpcye4re2l3omr4dl | Peru |
+| ![PF](Images/45vy9e7d9c158hogafwnjit5y@2x.png?raw=true) | PF | 45vy9e7d9c158hogafwnjit5y | French Polynesia |
+| ![PG](Images/20a5xnkno1y72w04eyz2jiqip@2x.png?raw=true) | PG | 20a5xnkno1y72w04eyz2jiqip | Papua New Guinea |
+| ![PH](Images/2bn52u7dpgfatwqumx224cczx@2x.png?raw=true) | PH | 2bn52u7dpgfatwqumx224cczx | Philippines |
+| ![PK](Images/4pjfgdjadjcfgts4nljt6mh0s@2x.png?raw=true) | PK | 4pjfgdjadjcfgts4nljt6mh0s | Pakistan |
+| ![PL](Images/27baqb7359ywdvsxxklx1kn11@2x.png?raw=true) | PL | 27baqb7359ywdvsxxklx1kn11 | Poland |
+| ![PR](Images/4dnqtn84wjz0cae8pc19w4j8d@2x.png?raw=true) | PR | 4dnqtn84wjz0cae8pc19w4j8d | Puerto Rico |
+| ![PS](Images/1iq272xbm8xx01hiu7thq4tgt@2x.png?raw=true) | PS | 1iq272xbm8xx01hiu7thq4tgt | Palestinian Territories |
+| ![PT](Images/1nbm5i9a0403zzvltn17lxinc@2x.png?raw=true) | PT | 1nbm5i9a0403zzvltn17lxinc | Portugal |
+| ![PW](Images/4g9khh4b1kp5nsc9qowmt1udy@2x.png?raw=true) | PW | 4g9khh4b1kp5nsc9qowmt1udy | Palau |
+| ![PY](Images/4snnlul02xmgkkb024q2bqyn9@2x.png?raw=true) | PY | 4snnlul02xmgkkb024q2bqyn9 | Paraguay |
+| ![QA](Images/1evdpix889bnpu5wgh6ae7kng@2x.png?raw=true) | QA | 1evdpix889bnpu5wgh6ae7kng | Qatar |
+| ![RE](Images/6spv9c500ltz9ri5ssphj8fih@2x.png?raw=true) | RE | 6spv9c500ltz9ri5ssphj8fih | Réunion |
+| ![RO](Images/17oj2qrzqlkhdjvazum10sx2i@2x.png?raw=true) | RO | 17oj2qrzqlkhdjvazum10sx2i | Romania |
+| ![RS](Images/5w4ve503bjdsshwx9ho6jxzx0@2x.png?raw=true) | RS | 5w4ve503bjdsshwx9ho6jxzx0 | Serbia |
+| ![RU](Images/7kfg68kh6n16fs4ap3xjiudr@2x.png?raw=true) | RU | 7kfg68kh6n16fs4ap3xjiudr | Russia |
+| ![RW](Images/12obgipj8u3vm1grf3jkrvqte@2x.png?raw=true) | RW | 12obgipj8u3vm1grf3jkrvqte | Rwanda |
+| ![SA](Images/639nv0r2ixeusx4nzqyzb5iuq@2x.png?raw=true) | SA | 639nv0r2ixeusx4nzqyzb5iuq | Saudi Arabia |
+| ![SB](Images/3ww0n6h8pvt4f0tjjgpl9uglh@2x.png?raw=true) | SB | 3ww0n6h8pvt4f0tjjgpl9uglh | Solomon Islands |
+| ![SC](Images/2xtsd537q3pt8cvis2qhfyhkg@2x.png?raw=true) | SC | 2xtsd537q3pt8cvis2qhfyhkg | Seychelles |
+| ![SD](Images/62wa0a1wwukxladeo5kqhrpen@2x.png?raw=true) | SD | 62wa0a1wwukxladeo5kqhrpen | Sudan |
+| ![SE](Images/1z6l2c33w2kyz9rdefs1d68nb@2x.png?raw=true) | SE | 1z6l2c33w2kyz9rdefs1d68nb | Sweden |
+| ![SG](Images/i5ym1phxb6fliphj1xd6pydv@2x.png?raw=true) | SG | i5ym1phxb6fliphj1xd6pydv | Singapore |
+| ![SI](Images/63vptz9g2ckqnnlxhd1oqn4xq@2x.png?raw=true) | SI | 63vptz9g2ckqnnlxhd1oqn4xq | Slovenia |
+| ![SK](Images/7dybe8679n9bgyrcxi383pq3y@2x.png?raw=true) | SK | 7dybe8679n9bgyrcxi383pq3y | Slovakia |
+| ![SL](Images/7kilikg56sxc0dsd6168dr57b@2x.png?raw=true) | SL | 7kilikg56sxc0dsd6168dr57b | Sierra Leone |
+| ![SM](Images/423ba8zqzgmze8xgruw9ggqck@2x.png?raw=true) | SM | 423ba8zqzgmze8xgruw9ggqck | San Marino |
+| ![SN](Images/6hhqyhr5cwq2pfprlazyposyk@2x.png?raw=true) | SN | 6hhqyhr5cwq2pfprlazyposyk | Senegal |
+| ![SO](Images/5f1civs919ytka0t5h6fperc2@2x.png?raw=true) | SO | 5f1civs919ytka0t5h6fperc2 | Somalia |
+| ![SR](Images/31vay1njxmbs7vtbfp1wo2dx1@2x.png?raw=true) | SR | 31vay1njxmbs7vtbfp1wo2dx1 | Suriname |
+| ![SS](Images/11zpzpjhf8wr0dcsrhz3suxc7@2x.png?raw=true) | SS | 11zpzpjhf8wr0dcsrhz3suxc7 | South Sudan |
+| ![ST](Images/5qo4drazeyi9qotnchg8k6unh@2x.png?raw=true) | ST | 5qo4drazeyi9qotnchg8k6unh | São Tomé & Príncipe |
+| ![SV](Images/6jovhn8du7uhbedi92voitt3k@2x.png?raw=true) | SV | 6jovhn8du7uhbedi92voitt3k | El Salvador |
+| ![SX](Images/gnkn1sv5xekg2ys63m9omyid@2x.png?raw=true) | SX | gnkn1sv5xekg2ys63m9omyid | Sint Maarten |
+| ![SY](Images/3tsnzfkszhsktmhsmwar1tvp8@2x.png?raw=true) | SY | 3tsnzfkszhsktmhsmwar1tvp8 | Syria |
+| ![SZ](Images/5td3zdplgm4y7ow3msc7vf1tb@2x.png?raw=true) | SZ | 5td3zdplgm4y7ow3msc7vf1tb | Swaziland |
+| ![TC](Images/4jq1jx3l9sgm3impjcnkilqua@2x.png?raw=true) | TC | 4jq1jx3l9sgm3impjcnkilqua | Turks & Caicos Islands |
+| ![TD](Images/3ym55p50ylho3bfxpfmv9x5wb@2x.png?raw=true) | TD | 3ym55p50ylho3bfxpfmv9x5wb | Chad |
+| ![TG](Images/3jiuckrqd0zejkm452st5dyq7@2x.png?raw=true) | TG | 3jiuckrqd0zejkm452st5dyq7 | Togo |
+| ![TH](Images/71wqq15l0mvpl4lneayzzh44g@2x.png?raw=true) | TH | 71wqq15l0mvpl4lneayzzh44g | Thailand |
+| ![TJ](Images/89gz6ggxg3ln21e4xjdfbc3n@2x.png?raw=true) | TJ | 89gz6ggxg3ln21e4xjdfbc3n | Tajikistan |
+| ![TL](Images/eh2dbby2bmo9wt317ouiryv7@2x.png?raw=true) | TL | eh2dbby2bmo9wt317ouiryv7 | Timor-Leste |
+| ![TM](Images/6xf1qvrbv5hkwwjscxlyfavrw@2x.png?raw=true) | TM | 6xf1qvrbv5hkwwjscxlyfavrw | Turkmenistan |
+| ![TN](Images/2um1icx6ftp1auliaxyw0ou6y@2x.png?raw=true) | TN | 2um1icx6ftp1auliaxyw0ou6y | Tunisia |
+| ![TO](Images/6glldic041efmyd2ot4v6weua@2x.png?raw=true) | TO | 6glldic041efmyd2ot4v6weua | Tonga |
+| ![TR](Images/6kd6webenogylfgwt2aa9l6vx@2x.png?raw=true) | TR | 6kd6webenogylfgwt2aa9l6vx | Turkey |
+| ![TT](Images/635ed0499golbw7h62vt7g53j@2x.png?raw=true) | TT | 635ed0499golbw7h62vt7g53j | Trinidad & Tobago |
+| ![TV](Images/4sq31i3c60l69k7vqlqdptpfw@2x.png?raw=true) | TV | 4sq31i3c60l69k7vqlqdptpfw | Tuvalu |
+| ![TW](Images/32v3c5buvimqeai3poy4yny86@2x.png?raw=true) | TW | 32v3c5buvimqeai3poy4yny86 | Taiwan |
+| ![TZ](Images/3rramsla3ovuhxks28wq1kirb@2x.png?raw=true) | TZ | 3rramsla3ovuhxks28wq1kirb | Tanzania |
+| ![TZ](Images/86cmqtqrhcex4ym9ph4f0f5cl@2x.png?raw=true) | TZ | 86cmqtqrhcex4ym9ph4f0f5cl | Zanzibar |
+| ![UA](Images/315w6fk6umfzf4qvba3t55u61@2x.png?raw=true) | UA | 315w6fk6umfzf4qvba3t55u61 | Ukraine |
+| ![UG](Images/1j6yonplolalz6goyopv7xd1k@2x.png?raw=true) | UG | 1j6yonplolalz6goyopv7xd1k | Uganda |
+| ![US](Images/7hr2f89v44y65dyu9k92vprwn@2x.png?raw=true) | US | 7hr2f89v44y65dyu9k92vprwn | United States |
+| ![UY](Images/286fwlvd6dzntv6ewv3cyvb0p@2x.png?raw=true) | UY | 286fwlvd6dzntv6ewv3cyvb0p | Uruguay |
+| ![UZ](Images/8j3qx8u2xs9yc8u8b3n1r31k@2x.png?raw=true) | UZ | 8j3qx8u2xs9yc8u8b3n1r31k | Uzbekistan |
+| ![VA](Images/318imb9unh7u97hsxuufi8tvj@2x.png?raw=true) | VA | 318imb9unh7u97hsxuufi8tvj | Vatican City |
+| ![VC](Images/5zvk0qh18y5hue4t558ynk0a2@2x.png?raw=true) | VC | 5zvk0qh18y5hue4t558ynk0a2 | St. Vincent & Grenadines |
+| ![VE](Images/1er0616j12s9yghuzvsx76d5v@2x.png?raw=true) | VE | 1er0616j12s9yghuzvsx76d5v | Venezuela |
+| ![VG](Images/50i6wirwv5jjia2qsst37vqhn@2x.png?raw=true) | VG | 50i6wirwv5jjia2qsst37vqhn | British Virgin Islands |
+| ![VI](Images/85tf3mf111g1lrtkakqihs5p1@2x.png?raw=true) | VI | 85tf3mf111g1lrtkakqihs5p1 | U.S. Virgin Islands |
+| ![VN](Images/747si8rr6manolqh31d1vz17q@2x.png?raw=true) | VN | 747si8rr6manolqh31d1vz17q | Vietnam |
+| ![VU](Images/5wzyv5bsxn2v26aiw2f5xf3kd@2x.png?raw=true) | VU | 5wzyv5bsxn2v26aiw2f5xf3kd | Vanuatu |
+| ![WS](Images/1s42ilmwpzotzmgf4fv15uub1@2x.png?raw=true) | WS | 1s42ilmwpzotzmgf4fv15uub1 | Samoa |
+| ![WW](Images/7yasa43laq1nb2e6f8bfuvxed@2x.png?raw=true) | WW | 7yasa43laq1nb2e6f8bfuvxed | World |
+| ![WW-AFR](Images/7ye7ksf2tpqaauihjdiuqi6s5@2x.png?raw=true) | WW-AFR | 7ye7ksf2tpqaauihjdiuqi6s5 | Africa |
+| ![WW-ASI](Images/7yck0z0f9rlpeyatanjc1ylzp@2x.png?raw=true) | WW-ASI | 7yck0z0f9rlpeyatanjc1ylzp | Asia |
+| ![WW-AUS](Images/7yhsra4rjw8luu19bqs705uc5@2x.png?raw=true) | WW-AUS | 7yhsra4rjw8luu19bqs705uc5 | Australia |
+| ![WW-EUR](Images/7yiwjcnhat6jo3f901h266cwl@2x.png?raw=true) | WW-EUR | 7yiwjcnhat6jo3f901h266cwl | Europe |
+| ![WW-NAM](Images/7yfrmldo7ozpwui3n6wfcy1n9@2x.png?raw=true) | WW-NAM | 7yfrmldo7ozpwui3n6wfcy1n9 | North America |
+| ![WW-SAM](Images/7ygvdgl31hirp07yeye1tvsut@2x.png?raw=true) | WW-SAM | 7ygvdgl31hirp07yeye1tvsut | South America |
+| ![XK](Images/86u6edbqifdjsn49mbp2anw7p@2x.png?raw=true) | XK | 86u6edbqifdjsn49mbp2anw7p | Kosovo |
+| ![YE](Images/1qlu0dee9bp5z56bhuh6wemh0@2x.png?raw=true) | YE | 1qlu0dee9bp5z56bhuh6wemh0 | Yemen |
+| ![YT](Images/2ei35jfxyya3wohqi6x3wqpuh@2x.png?raw=true) | YT | 2ei35jfxyya3wohqi6x3wqpuh | Mayotte |
+| ![ZA](Images/1kiwby3xmt97m3ejw76qs4i6k@2x.png?raw=true) | ZA | 1kiwby3xmt97m3ejw76qs4i6k | South Africa |
+| ![ZM](Images/2dlu3zrfid7nl6ppmb04hjgot@2x.png?raw=true) | ZM | 2dlu3zrfid7nl6ppmb04hjgot | Zambia |
+| ![ZW](Images/6pqqn8s3pvbryohnkxd4ch4kn@2x.png?raw=true) | ZW | 6pqqn8s3pvbryohnkxd4ch4kn | Zimbabwe |
 
 ## License
 
