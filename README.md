@@ -251,6 +251,17 @@ In this set, exporting several flags is disabled because OPTA doesn't have corre
 | ![ZM](Images/2dlu3zrfid7nl6ppmb04hjgot@2x.png?raw=true) | ZM | 2dlu3zrfid7nl6ppmb04hjgot | Zambia |
 | ![ZW](Images/6pqqn8s3pvbryohnkxd4ch4kn@2x.png?raw=true) | ZW | 6pqqn8s3pvbryohnkxd4ch4kn | Zimbabwe |
 
+## Missing regions
+
+| Code | UUID | Country |
+| :-------------: | :-------------: | ------------- |
+| BQ | 8761omgzmcdxhdapbnzldr5cl | Sint Eustatius |
+| BQ | 8775iogxt9cbmdo3aqgq41psl | Bonaire |
+| CY | 87bkkxd4589yenx2egx6ze0gl | Northern Cyprus |
+| MF | 7cd64anhyq1yvt58ce2lmdj6x | St. Martin |
+| - | 87cobvcdtin7wynra39931az9 | Mandatory Palestine |
+| - | 84ke4hrpy7uuwxt7o1hwn29qt | Serbia and Montenegro |
+
 ## License
 
 FlagKit is released under the MIT license. See
