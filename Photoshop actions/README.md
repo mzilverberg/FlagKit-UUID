@@ -10,6 +10,7 @@ These Photoshop actions are added to this repository, because the images are ult
 The actions include:
 - A Save for Web export (legacy)
 - A TinyPNG export, which depends on the [TinyPNG/JPG plugin](https://tinypng.com/photoshop) for Photoshop
+- A TinyJPG export, which depends on the same plugin
 
 ## Limitations
 
@@ -22,6 +23,10 @@ The current structure in the actions is:
     - 34x24
     - 51x36
   - exports-tinypng _(used in the 'TinyPNG' action)_
+    - 17x12
+    - 34x24
+    - 51x36
+  - exports-tinyjpg _(used in the 'TinyJPG' action)_
     - 17x12
     - 34x24
     - 51x36
